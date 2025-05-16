@@ -3,174 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Amit Singh - Resume</title>
-
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" crossorigin="anonymous">
-
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f2f5;
-      padding: 30px 15px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .container {
-      background: #fff;
-      width: 100%;
-      max-width: 720px;
-      border: 2px solid black;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      padding: 25px 30px;
-    }
-
-    h1 {
-      color: #003366;
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      color: #34495e;
-      border-bottom: 2px solid #2980b9;
-      padding-bottom: 6px;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      font-size: 1.3rem;
-    }
-
-    p, li {
-      font-size: 1rem;
-      margin-bottom: 8px;
-    }
-
-    ul {
-      margin-left: 20px;
-      list-style-type: disc;
-    }
-
-    .contact-info {
-      margin-bottom: 20px;
-    }
-
-    .contact-info p {
-      margin-bottom: 10px;
-      font-size: 0.95rem;
-      display: flex;
-      align-items: center;
-    }
-
-    .contact-info i {
-      color: #003366;
-      margin-right: 10px;
-      width: 20px;
-      text-align: center;
-    }
-
-    a {
-      color: #2980b9;
-      text-decoration: none;
-      word-break: break-word;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .declaration {
-      margin-top: 25px;
-      font-size: 1rem;
-      line-height: 1.4;
-    }
-
-    .signature {
-      margin-top: 15px;
-      font-weight: 700;
-      text-align: right;
-      font-size: 1.1rem;
-    }
-
-    @media (max-width: 480px) {
-      .container {
-        padding: 20px;
-      }
-
-      h1 {
-        font-size: 1.7rem;
-      }
-
-      h2 {
-        font-size: 1.1rem;
-      }
-
-      p, li {
-        font-size: 0.95rem;
-      }
-    }
-  </style>
+  <title>Amit Singh - Portfolio</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Amit Singh</h1>
-    <div class="contact-info">
-      <p><i class="fas fa-envelope"></i><a href="mailto:contactamitaryan25@gmail.com">contactamitaryan25@gmail.com</a></p>
-      <p><i class="fas fa-phone"></i>7014021326</p>
-      <p><i class="fas fa-map-marker-alt"></i>39, Teli Gali, Hamirgarh (Bhilwara), Rajasthan - 311025</p>
-      <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/amit-singh-9b1191281/" target="_blank">linkedin.com/in/amit-singh</a></p>
-      <p><i class="fab fa-github"></i><a href="https://github.com/amitsingh256" target="_blank">github.com/amitsingh256</a></p>
+
+  <header>
+    <div class="intro">
+      <h1>Amit Singh</h1>
+      <p>Python Developer & AI Enthusiast</p>
     </div>
+    <div class="contact-icons">
+      <a href="https://wa.me/917014021326" target="_blank" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
-    <section>
-      <h2>Objective</h2>
-      <p>Highly motivated Python Developer with a strong desire to take on new challenges. Demonstrates a solid work ethic, adaptability, and exceptional interpersonal skills. Adept at working effectively under pressure and quickly mastering new skills. Passionate about developing efficient and reliable software solutions.</p>
-    </section>
+      <a href="mailto:contactamitaryan25@gmail.com" title="Email" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
 
-    <section>
-      <h2>Education</h2>
+      <a href="tel:+917014021326" title="Phone" aria-label="Phone">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+
+      <a href="https://www.google.com/maps/place/Bhilwara,+Rajasthan,+India" title="Location" aria-label="Location" target="_blank" rel="noopener">
+        <i class="fa-solid fa-location-dot"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/amit-singh-9b1191281/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/amitsingh256" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+
+    </div>
+  </header>
+
+  <section class="container section about">
+    <h2>About Me</h2>
+    <p>
+      Highly Motivated Python Developer with a strong desire to take on new challenges. Demonstrates a solid work ethic, adaptability, and exceptional interpersonal skills. Adept at working effectively under pressure and quickly mastering new skills. Passionate about developing efficient and reliable software solutions.
+    </p>
+  </section>
+
+  <section class="container section education">
+    <h2>Education</h2>
+    <article class="education-item">
+      <h3>Bachelor of Technology (B.Tech) in Computer Science</h3>
+      <p>Sangam University, Bhilwara (Rajasthan) | 2017 - 2021</p>
+    </article>
+    <article class="education-item">
+      <h3>Senior Secondary (12th), Science Stream (PCM)</h3>
+      <p>Govt. Sr. Sec. School, Bhilwara (Rajasthan) | 2014 - 2016</p>
+    </article>
+  </section>
+
+  <section class="container section experience">
+    <h2>Experience</h2>
+    <article class="experience-item">
+      <h3>Python Developer</h3>
+      <p>BITSS TECHNIQUES | Feb. 2025 - Present</p>
       <ul>
-        <li><strong>B.Tech in Computer Science & Engineering</strong> (2017–2021)<br />Sangam University, Bhilwara (Rajasthan) — CGPA: 7.09</li>
+        <li>Lead development of scalable applications using Python and AI Integration</li>
+        <li>Contribute with other developers and conducted code reviews</li>
+        <li>Implemented CI/CD pipelines and improved deployment processes</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
+    </article>
+    <article class="experience-item">
+      <h3>Java Developer</h3>
+      <p>RegEx Software Pvt Ltd | March 2023 - Jun 2024</p>
       <ul>
-        <li>Python, Django, Langchain, AI Implementation</li>
-        <li>MySQL (DBMS), Core-JAVA, JDBC, Collection Framework</li>
-        <li>HTML, CSS</li>
-        <li>Exception Handling, OOPs Concepts</li>
+        <li>Developed backend APIs with Java Spring Boot</li>
+        <li>Collaborated with frontend team to integrate REST APIs</li>
+        <li>Optimized database queries leading to 30% faster load times</li>
       </ul>
-    </section>
+    </article>
+  </section>
 
-    <section>
-      <h2>Work Experience</h2>
+  <section class="container section skills">
+    <h2>Skills</h2>
+    <ul class="skill-list">
+      <li>Python</li>
+    <li>AI/ML Integration</li>
+      <li>Django</li>
+      <li>Flask</li>
+      <li>Core Java</li>
+      <li>HTML5 & CSS3</li>
+      <li>REST APIs</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <section class="container section projects">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <h3>CHATBOT (Gemma-3 + Python)</h3>
+      <p>Developed an intelligent conversational chatbot using Google’s Gemma-3B-IT model integrated with Python.</p>
       <ul>
-        <li><strong>RegEx Software Pvt. Ltd.</strong>, Jaipur (Rajasthan) — <em>March 2023 – June 2024</em></li>
-        <li><strong>BITSS TECHNIQUES</strong>, Bhilwara (Raj.) — <em>Feb. 2025</em></li>
+        <li>Utilized the Gemma-3B-IT model for natural conversation flow.</li>
+        <li>Integrated with Python backend for real-time responses.</li>
+        <li>Handled multilingual inputs for better user experience.</li>
       </ul>
-    </section>
+    </article>
 
-    <section>
-      <h2>Projects</h2>
+    <article class="project">
+      <h3>Text-to-Image Generator (Python + AI Model)</h3>
+      <p>Built a smart Text-to-Image generator that converts user input text into relevant images using state-of-the-art models.</p>
       <ul>
-        <li>AI ChatBot (Python + LLaMA-3)</li>
-        <li>Text_to_Image Converter (Python + AI)</li>
-        <li>API to Convert Latex/MathJax Equation into Image</li>
-        <li>AI Agent to Create Test MCQs and Send via WhatsApp (OpenAI + Tavily)</li>
-        <li>Restaurant Menu & Billing Application (Core-Java)</li>
-        <li>Airline Management System (Core-Java)</li>
+        <li>Processed user input with NLP techniques.</li>
+        <li>Generated meaningful images using AI diffusion models.</li>
+        <li>Developed a clean and simple API interface for integration.</li>
       </ul>
+    </article>
+
+    <article class="project">
+      <h3>LaTeX-to-Image Converter (Python + Matplotlib)</h3>
+      <p>Designed and developed an API that converts LaTeX mathematical expressions into high quality images.</p>
+      <ul>
+        <li>Used Matplotlib to render LaTeX expressions.</li>
+        <li>Returned high-resolution PNG images for download.</li>
+        <li>Designed with Flask API for fast performance.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <h3>AI Agent for MCQs (Python + LangChain + OpenAI + Tavily)</h3>
+      <p>Developed an AI-powered agent that automatically generates Multiple Choice Questions (MCQs) from user input and sends them via WhatsApp.</p>
+      <ul>
+        <li>Utilized LangChain and OpenAI for context-aware MCQ generation.</li>
+        <li>Enabled bilingual support: English and Hindi.</li>
+        <li>Built a Flask-based API for message processing and response delivery.</li>
+      </ul>
+    </article>
     </section>
 
-    <section class="declaration">
-      <h2>Declaration</h2>
-      <p>I hereby declare that all the information mentioned above is true to the best of my knowledge.</p>
-    </section>
-    <div class="signature">– Amit Singh</div>
-  </div>
+
+  <section class="container section contact">
+    <h2>Contact Me</h2>
+    <p><i class="fa-solid fa-envelope"></i> contactamitaryan25@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> +91 70140 21326</p>
+    <p><i class="fa-solid fa-location-dot"></i> Bhilwara (Rajasthan) India</p>
+  </section>
+
+  <footer>
+    <p>© 2023 Amit Singh | Designed & Developed by Amit Singh</p>
+  </footer>
+
 </body>
 </html>
