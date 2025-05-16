@@ -4,40 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Amit Singh - Resume</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnH/2iKZf5HO7uHc6YwhHdUhgkpj1lv5nE9aXBCRF8ljL34V9zPY6TnFQ6ZK4+GktInN+e8xw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f0f2f5;
-      color: #333;
-      line-height: 1.5;
       padding: 30px 15px;
       display: flex;
       justify-content: center;
     }
 
     .container {
-      background: white;
+      background: #fff;
       width: 100%;
       max-width: 720px;
+      border: 2px solid black;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       padding: 25px 30px;
-      border: 2px solid black;
     }
 
     h1 {
-      color: #003366; /* dark blue */
-      margin-bottom: 12px;
-      font-size: 2rem;
-      font-weight: 700;
+      color: #003366;
       text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
     h2 {
@@ -47,7 +44,6 @@
       margin-top: 30px;
       margin-bottom: 15px;
       font-size: 1.3rem;
-      font-weight: 600;
     }
 
     p, li {
@@ -60,6 +56,24 @@
       list-style-type: disc;
     }
 
+    .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-info i {
+      color: #003366;
+      margin-right: 10px;
+      width: 20px;
+      text-align: center;
+    }
+
     a {
       color: #2980b9;
       text-decoration: none;
@@ -68,11 +82,6 @@
 
     a:hover {
       text-decoration: underline;
-    }
-
-    .contact-info p {
-      margin-bottom: 6px;
-      font-size: 0.95rem;
     }
 
     .declaration {
@@ -86,23 +95,21 @@
       font-weight: 700;
       text-align: right;
       font-size: 1.1rem;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     @media (max-width: 480px) {
-      body {
-        padding: 15px 10px;
-      }
       .container {
-        padding: 20px 20px;
-        max-width: 100%;
+        padding: 20px;
       }
+
       h1 {
         font-size: 1.7rem;
       }
+
       h2 {
         font-size: 1.1rem;
       }
+
       p, li {
         font-size: 0.95rem;
       }
@@ -113,11 +120,11 @@
   <div class="container">
     <h1>Amit Singh</h1>
     <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:contactamitaryan25@gmail.com">contactamitaryan25@gmail.com</a></p>
-      <p><strong>Mobile:</strong> 7014021326</p>
-      <p><strong>Address:</strong> 39, Teli Gali, Hamirgarh (Bhilwara), Rajasthan - 311025</p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amit-singh-9b1191281/" target="_blank">linkedin.com/in/amit-singh</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/amitsingh256" target="_blank">github.com/amitsingh256</a></p>
+      <p><i class="fas fa-envelope"></i><a href="mailto:contactamitaryan25@gmail.com">contactamitaryan25@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i>7014021326</p>
+      <p><i class="fas fa-map-marker-alt"></i>39, Teli Gali, Hamirgarh (Bhilwara), Rajasthan - 311025</p>
+      <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/amit-singh-9b1191281/" target="_blank">linkedin.com/in/amit-singh</a></p>
+      <p><i class="fab fa-github"></i><a href="https://github.com/amitsingh256" target="_blank">github.com/amitsingh256</a></p>
     </div>
 
     <section>
@@ -128,29 +135,7 @@
     <section>
       <h2>Education</h2>
       <ul>
-        <li><strong>B.Tech in Computer Science & Engineering</strong> (2017–2021)<br />
-          Sangam University, Bhilwara (Rajasthan) — CGPA: 7.09
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>AI ChatBot (Python + LLaMA-3)</li>
-        <li>Text_to_Image Converter (Python + AI)</li>
-        <li>API to Convert Latex/MathJax Equation into Image</li>
-        <li>AI Agent to Create Test MCQs and Send via WhatsApp (OpenAI + Tavily)</li>
-        <li>Restaurant Menu & Billing Application (Core-Java)</li>
-        <li>Airline Management System (Core-Java)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Work Experience</h2>
-      <ul>
-        <li><strong>RegEx Software Pvt. Ltd.</strong>, Jaipur (Rajasthan) — <em>March 2023 – June 2024</em></li>
-        <li><strong>BITSS TECHNIQUES</strong>, Bhilwara (Raj.) — <em>Feb. 2025</em></li>
+        <li><strong>B.Tech in Computer Science & Engineering</strong> (2017–2021)<br />Sangam University, Bhilwara (Rajasthan) — CGPA: 7.09</li>
       </ul>
     </section>
 
@@ -164,6 +149,26 @@
       </ul>
     </section>
 
+    <section>
+      <h2>Work Experience</h2>
+      <ul>
+        <li><strong>RegEx Software Pvt. Ltd.</strong>, Jaipur (Rajasthan) — <em>March 2023 – June 2024</em></li>
+        <li><strong>BITSS TECHNIQUES</strong>, Bhilwara (Raj.) — <em>Feb. 2025</em></li>
+      </ul>
+    </section>
+
+      <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>AI ChatBot (Python + LLaMA-3)</li>
+        <li>Text_to_Image Converter (Python + AI)</li>
+        <li>API to Convert Latex/MathJax Equation into Image</li>
+        <li>AI Agent to Create Test MCQs and Send via WhatsApp (OpenAI + Tavily)</li>
+        <li>Restaurant Menu & Billing Application (Core-Java)</li>
+        <li>Airline Management System (Core-Java)</li>
+      </ul>
+    </section>
+    
     <section class="declaration">
       <p>I hereby declare that all the information mentioned above is true to the best of my knowledge.</p>
     </section>
