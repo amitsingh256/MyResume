@@ -10,20 +10,28 @@
       margin: 0; padding: 0; box-sizing: border-box;
     }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      border: 5px solid #2980b9;  /* Page border */
+      box-sizing: border-box;
       background-color: #f7f9fc;
-      color: #1c2331;
-      padding: 40px 20px;
       display: flex;
       justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1c2331;
       min-height: 100vh;
     }
 
     .container {
       background: #ffffff;
       width: 800px;
-      border: 3px solid #2980b9;
       border-radius: 15px;
       box-shadow: 0 12px 30px rgba(41, 128, 185, 0.25);
       padding: 50px 60px;
