@@ -56,6 +56,7 @@ header {
   display: flex;
   gap: 20px;
   flex: 1 1 auto;
+  margin-right: 40px;
   justify-content: flex-end;
   min-width: 220px;
 }
@@ -224,7 +225,11 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .contact-icons {
     justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-right: 0;
   }
 }
