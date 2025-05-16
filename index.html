@@ -5,122 +5,178 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Amit Singh - Resume</title>
   <style>
-    /* Reset and Base */
+    /* Reset */
     * {
       margin: 0; padding: 0; box-sizing: border-box;
     }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #eef2f7;
-      color: #2c3e50;
-      line-height: 1.5;
-      padding: 20px;
+      background-color: #f7f9fc;
+      color: #1c2331;
+      padding: 40px 20px;
       display: flex;
       justify-content: center;
+      min-height: 100vh;
     }
+
     .container {
-      max-width: 800px;
-      width: 100%;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-      padding: 40px 50px;
+      background: #ffffff;
+      width: 800px;
+      border: 3px solid #2980b9;
+      border-radius: 15px;
+      box-shadow: 0 12px 30px rgba(41, 128, 185, 0.25);
+      padding: 50px 60px;
       box-sizing: border-box;
     }
 
-    /* Header */
     header {
       text-align: center;
-      margin-bottom: 30px;
-    }
-    header h1 {
-      font-size: 3rem;
-      color: #2980b9;
-      margin-bottom: 8px;
-      letter-spacing: 2px;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #7f8c8d;
+      margin-bottom: 40px;
     }
 
-    /* Contact Info */
+    header h1 {
+      font-size: 3.2rem;
+      color: #2980b9;
+      letter-spacing: 3px;
+      font-weight: 900;
+      margin-bottom: 5px;
+      font-family: 'Segoe UI Black', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #576574;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
     .contact-info {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
-      margin-bottom: 40px;
-    }
-    .contact-info div {
-      font-size: 0.95rem;
+      gap: 28px;
+      margin-bottom: 50px;
+      font-weight: 600;
+      font-size: 1rem;
       color: #34495e;
     }
+
+    .contact-info div {
+      min-width: 200px;
+      text-align: center;
+    }
+
     .contact-info a {
       color: #2980b9;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
+
     .contact-info a:hover {
+      color: #1b4f72;
       text-decoration: underline;
     }
 
-    /* Section Styles */
     section {
-      margin-bottom: 35px;
+      margin-bottom: 45px;
     }
+
     section h2 {
-      border-bottom: 3px solid #2980b9;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: #34495e;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #1c2331;
+      border-bottom: 4px solid #2980b9;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      letter-spacing: 1.2px;
     }
+
     ul {
       list-style: none;
       padding-left: 0;
     }
+
     ul li {
-      padding-left: 1.2em;
-      text-indent: -1.2em;
-      margin-bottom: 12px;
       position: relative;
-      color: #2c3e50;
-      font-size: 1rem;
-    }
-    ul li::before {
-      content: "•";
-      color: #2980b9;
-      position: absolute;
-      left: 0;
-      font-size: 1.4rem;
-      line-height: 1;
-    }
-    /* Bold inside list */
-    strong {
-      color: #2c3e50;
+      padding-left: 20px;
+      margin-bottom: 16px;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      color: #2d3e50;
+      font-weight: 500;
     }
 
-    /* Footer */
-    footer {
-      text-align: center;
+    ul li::before {
+      content: "●";
+      position: absolute;
+      left: 0;
+      color: #2980b9;
+      font-size: 1.4rem;
+      top: 3px;
+    }
+
+    strong {
+      font-weight: 700;
+      color: #1c2331;
+    }
+
+    em {
       font-style: italic;
-      font-size: 0.9rem;
-      color: #7f8c8d;
+      color: #6c7a89;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #34495e;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    /* Declaration Text */
+    .declaration p {
+      font-size: 1rem;
+      color: #576574;
+      font-style: normal;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+    .declaration strong {
+      font-weight: 700;
+      color: #2980b9;
+    }
+
+    footer {
       margin-top: 50px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #95a5a6;
+      font-style: italic;
       letter-spacing: 1px;
     }
 
     /* Responsive */
-    @media(max-width: 600px) {
+    @media (max-width: 850px) {
       .container {
-        padding: 30px 20px;
+        width: 100%;
+        padding: 40px 30px;
       }
+      .contact-info div {
+        min-width: 150px;
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 450px) {
       header h1 {
         font-size: 2.4rem;
       }
       section h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+      }
+      ul li {
+        font-size: 1rem;
       }
     }
   </style>
@@ -182,7 +238,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="declaration">
       <h2>Declaration</h2>
       <p>I hereby declare that all the information mentioned above is true to the best of my knowledge.</p>
       <p><strong>– Amit Singh</strong></p>
