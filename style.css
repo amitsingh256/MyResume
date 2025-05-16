@@ -54,7 +54,7 @@ header {
 /* Contact icons container */
 .contact-icons {
   display: flex;
-  gap: 18px;
+  gap: 20px;
   flex: 1 1 auto;
   justify-content: flex-end;
   min-width: 220px;
