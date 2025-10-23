@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Typing effect
   const subtitle = document.querySelector(".intro p");
   if (subtitle) {
-    const text = "Python Developer & AI/ML Enthusiast";
+    const text = "Python & AI Developer";
     let index = 0;
     subtitle.innerHTML = "";
 
