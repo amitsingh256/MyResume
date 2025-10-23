@@ -334,3 +334,67 @@ footer {
   transform: scale(1.05);
 }
 
+
+/* ========== Theme Toggle Button ========== */
+#theme-toggle {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #ffffff;
+  color: #004165;
+}
+
+/* ========== DARK MODE SECTION ========== */
+body.dark {
+  background-color: #0e0e0e;
+  color: #f1f1f1;
+}
+
+body.dark header {
+  background-color: #001a2e;
+  color: #f1f1f1;
+}
+
+body.dark h2 {
+  color: #00b4d8;
+  border-left-color: #ff8800;
+}
+
+body.dark .section {
+  border-bottom-color: #444;
+}
+
+body.dark .skill-group {
+  background-color: #1a1a1a;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.08);
+}
+
+body.dark .skill-list li {
+  background-color: #111;
+}
+
+body.dark .skill-list li:hover {
+  background-color: #ff8800;
+}
+
+body.dark footer {
+  background-color: #001a2e;
+}
+
+body.dark .contact-icons a {
+  color: #00b4d8;
+}
+
+body.dark .contact-icons a:hover {
+  background-color: #003a63;
+  color: #ffffff;
+}
+
